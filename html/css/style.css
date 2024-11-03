@@ -310,7 +310,6 @@ button {
      background: transparent;
      position: absolute;
      z-index: 999;
-     border-top: #090102 solid 11px;
 }
 
 .logo {
@@ -452,6 +451,12 @@ button {
      z-index: -1;
 }
 
+.about #titlepage2::before{
+     position: absolute;
+     left: -30px;
+     z-index: -1;
+}
+
 .about .about_img figure {
      margin: 0;
 }
@@ -511,7 +516,7 @@ button {
      text-align: center;
      border: #555556 solid 1px;
      border-radius: 2px;
-     padding: 120px 0px 30px 0px;
+     padding: 120px 10px 30px 10px;
      margin-bottom: 30px;
 }
 
@@ -705,12 +710,45 @@ button {
      min-height: 732px;
 }
 
-.main_form {
+.locations-container {
+     max-width: 800px;
+     width: 100%;
+     padding: 20px;
      position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     margin-left: 50px;
+     border: #000 solid 2px;
+}
+
+.location-item {
+     display: flex;
+     align-items: center;
+     padding: 20px;
+     border-bottom: 1px solid #ccc;
+}
+
+.location-item:last-child {
+     border-bottom: none;
+}
+
+.location-info h3 {
+     margin-top: 0;
+}
+
+.location-info p {
+     margin-bottom: 0;
+}
+
+.main_form {
+     position: relative;
      z-index: 999;
      background: #fff;
      padding: 40px 50px;
-     margin-top: 107px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     border: #000 solid 2px;
 }
 
 .main_form .contactus {
@@ -735,7 +773,6 @@ button {
      padding-bottom: 14px;
      background: transparent;
      color: #4b4b4c;
-     ;
      font-size: 18px;
      font-weight: normal;
      border-top: inherit;
@@ -766,6 +803,38 @@ button {
      opacity: 1;
 }
 
+.socialmedia .titlepage{
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+     padding: 30px;
+     font-size: 50px;
+     background: #3B5998;
+     color: white;
+}
+   
+.fa-twitter {
+     padding: 30px;
+     font-size: 40px;
+     margin-left: 10px;
+     margin-right: 10px;
+     background: #55ACEE;
+     color: white;
+}
+   
+.fa-linkedin {
+     padding: 30px;
+     font-size: 45px;
+     background: #007bb5;
+     color: white;
+}
 
 /** end contact section **/
 
