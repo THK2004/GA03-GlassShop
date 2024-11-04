@@ -92,7 +92,7 @@
       <!-- Register Section -->
 
       <!-- Register Section -->
-        <section id="register" class="register_section py-12 bg-gray-100">
+        <section id="register-form" class="register_section py-12 bg-gray-100">
             <div class="container mx-auto">
             <div class="flex justify-center">
                 
@@ -207,5 +207,11 @@
             // Additional registration logic can go here, such as an API call or redirect
          }
      </script>
+     <script>
+        
+      window.onload = function() {
+          document.getElementById("register-form").scrollIntoView({ behavior: "smooth" });
+      };
+  </script>
    </body>
 </html>

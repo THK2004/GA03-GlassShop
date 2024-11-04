@@ -30,6 +30,12 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <script>
+        
+        window.onload = function() {
+            document.getElementById("login-form").scrollIntoView({ behavior: "smooth" });
+        };
+    </script>
    </head>
    <!-- body -->
    <body class="main-layout position_head">
@@ -92,7 +98,7 @@
       <!-- Register Section -->
 
       <!-- login section -->
-        <section id="login" class="login_section py-12 bg-gray-100">
+        <section id="login-form" class="login_section py-12 bg-gray-100 ">
             <div class="container mx-auto">
                 <div class="flex justify-center">
                     <!-- Image container -->
@@ -145,7 +151,7 @@
       <!-- end login section -->
       <!--  footer -->
       <footer>
-         <div class="footer">
+         <div class="footer ">
             <div class="container">
                <div class="row">
                   <div class="col-md-8 offset-md-2">
@@ -215,5 +221,6 @@
          }
         
      </script>
+
    </body>
 </html>
