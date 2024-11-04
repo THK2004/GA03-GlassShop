@@ -31,6 +31,7 @@
    </head>
    <!-- body -->
    <body class="main-layout position_head">
+      <!-- header -->
       <header>
          <!-- header inner -->
          <div class="header">
@@ -58,7 +59,7 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="about.html">About</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="glasses.html">Our Glasses</a>
                               </li>
                               <li class="nav-item">
@@ -74,7 +75,7 @@
                                     <li><a href="product8.html">Glasses8</a></li>
                                  </ul>
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="contact.html">Contact Us</a>
                               </li>
                               <li class="nav-item d_none login_btn">
@@ -96,87 +97,24 @@
       </header>
       <!-- end header inner -->
       <!-- end header -->
-      <!-- contact section -->
-      <div id="contact" class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <h3>Contact Us</h3>
-                        </div>
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactusmess" placeholder="Message" type="type" Message="Name">
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
+      <!-- Our  Glasses section -->
+      <main>
+         <div class="row product_info_container">
+            <div class="product_info">
+               <div class="product_image col-4">
+                  <img src="images/glass1.png" alt="Sunglasses Image">
                </div>
-               <div class="col-md-6">
-                  <div class="locations-container">
-                     <h1>Visit Our Convenient Locations</h1>
-                     <div class="location-item">
-                        <div class="location-info">
-                           <h3>HaiCode Eyewear - Main Street</h3>
-                           <p>123 Main Street, Somewhere Vietnam</p>
-                           <p>Open: Monday - Saturday, 9AM - 6PM</p>
-                        </div>
-                     </div>
-                     <div class="location-item">
-                        <div class="location-info">
-                           <h3>HaiCode Eyewear - Downtown</h3>
-                           <p>456 Park Avenue, Somewhere Vietnam</p>
-                           <p>Open: Monday - Friday, 10AM - 7PM</p>
-                        </div>
-                     </div>
-                     <div class="location-item">
-                        <div class="location-info">
-                           <h3>HaiCode Eyewear - Shopping Mall</h3>
-                           <p>789 Retail Plaza, Somewhere Vietnam</p>
-                           <p>Open: Monday - Sunday, 11AM - 8PM</p>
-                        </div>
-                     </div>
-                  </div>
+               <div class="product_details col-8">
+                  <h3>Sun glasses 1</h3>
+                  <p>Price: $50</p>
+                  <p>These fashionable oversized sunglasses feature a classic black frame with a sleek design, perfect for adding a touch of elegance to any outfit. With tinted lenses, they provide both style and sun protection.</p>
+                  <br>
+                  <button onclick="add_to_cart()" class="add_to_cart">Add to cart</button>
                </div>
             </div>
          </div>
-         <!--
-         <div class="container-fluid">
-            <div class="map_section">
-               <div id="map">
-               </div>
-            </div>
-         </div>
-         -->
-      </div>
-      <div class="socialmedia">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="titlepage">
-                     <h2>Our Social Midea Links</h2>
-                     <br>
-                     <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                     <a href="https://x.com/" class="fa fa-twitter" target="_blank"></a>
-                     <a href="https://linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end contact section -->
+      </main>
+      
       <!--  footer -->
       <footer>
          <div class="footer">
@@ -204,6 +142,7 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
+      <script src="js/function.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
@@ -213,3 +152,6 @@
       <script src="js/custom.js"></script>
    </body>
 </html>
+
+
+
