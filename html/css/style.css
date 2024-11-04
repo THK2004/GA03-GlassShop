@@ -260,6 +260,29 @@ button {
      padding-right: 10px;
 }
 
+nav li ul {
+     display: none;
+     position: absolute;
+     background-color: white;
+     width: 200px;
+     z-index: 1;
+}
+
+nav li:hover > ul {
+     display: block;
+}
+
+nav li ul li {
+     display: block;
+     margin: 20px;
+     text-align: left;
+     border-bottom: #000 solid 1px;
+}
+
+nav li ul li a {
+     display: block;
+}
+
 .login_btn a {
      background: #03cafc;
      padding: 9px 32px !important;
@@ -517,6 +540,53 @@ button {
      display: block;
      margin: 0 auto;
      margin-top: 44px;
+}
+
+.glasses_box .des {
+     font-size:smaller !important;
+     color: grey !important;
+}
+
+.product_info_container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     max-width: 100%;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+   
+.product_info {
+     display: flex;
+     width: 90%;
+}
+   
+.product_image img {
+     width: 100%; /* Adjust based on your preferred image size */
+}
+   
+.product_details {
+     padding-left: 20px; /* Space between image and text */
+}
+
+.product_details a{
+     justify-content: center;
+}
+
+.add_to_cart {
+     background-color: #28a745; /* Green background */
+     color: #fff; /* White text */
+     padding: 10px 20px; /* Padding for the button */
+     border: none; /* Remove border */
+     border-radius: 5px; /* Rounded corners */
+     cursor: pointer; /* Pointer cursor on hover */
+     font-size: 16px;
+     margin-top: 15px; /* Space above the button */
+     transition: background-color 0.3s ease; /* Smooth transition */
+}
+   
+.add_to_cart:hover {
+     background-color: #218838; /* Darker green on hover */
 }
 
 
